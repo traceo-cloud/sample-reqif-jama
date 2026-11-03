@@ -1,0 +1,115 @@
+{
+  "schema": "traceo.import-receipt/v1",
+  "source_sha256": "6e422be322597a229f049bc8dd37294ff68c3016db4ca69e64b8abfeb617dbb2",
+  "declared_format": "reqif",
+  "detected_tool": "jama",
+  "tool_id": "Jama Connect",
+  "verdict": "lossy",
+  "counts": {
+    "objects": {
+      "in": 3,
+      "out": 3
+    },
+    "headings": {
+      "in": 0,
+      "out": 0
+    },
+    "attributes": {
+      "in": 13,
+      "out": 13
+    },
+    "enumeration_values": {
+      "in": 3,
+      "out": 3
+    },
+    "link_types": {
+      "in": 1,
+      "out": 1
+    },
+    "links": {
+      "in": 1,
+      "out": 1
+    },
+    "hierarchy_nodes": {
+      "in": 3,
+      "out": 3
+    },
+    "history_entries": {
+      "in": 0,
+      "out": 0
+    },
+    "baselines": {
+      "in": 0,
+      "out": 0
+    },
+    "attachments": {
+      "in": 1,
+      "out": 0
+    }
+  },
+  "links_by_type": {
+    "Derived from": {
+      "in": 1,
+      "out": 1
+    }
+  },
+  "attributes_by_datatype": {
+    "ENUMERATION": {
+      "in": 3,
+      "out": 3
+    },
+    "STRING": {
+      "in": 8,
+      "out": 8
+    },
+    "XHTML": {
+      "in": 2,
+      "out": 2
+    }
+  },
+  "drops": [
+    {
+      "cls": "attachments",
+      "source_ref": "jama-item-88002",
+      "reason": "ole_preview_only",
+      "detail": "embedded object in Description"
+    }
+  ],
+  "transforms": [
+    {
+      "cls": "objects",
+      "source_ref": "jama-item-88001",
+      "reason": "defaulted_field",
+      "detail": "defaulted: type, classification, status, priority"
+    },
+    {
+      "cls": "attributes",
+      "source_ref": "jama-item-88002",
+      "reason": "rich_text_flattened",
+      "detail": "description derived from Description; the XHTML is kept in metadata.attributes"
+    },
+    {
+      "cls": "objects",
+      "source_ref": "jama-item-88002",
+      "reason": "defaulted_field",
+      "detail": "defaulted: type, classification"
+    },
+    {
+      "cls": "attributes",
+      "source_ref": "jama-item-88003",
+      "reason": "rich_text_flattened",
+      "detail": "description derived from Description; the XHTML is kept in metadata.attributes"
+    },
+    {
+      "cls": "objects",
+      "source_ref": "jama-item-88003",
+      "reason": "defaulted_field",
+      "detail": "defaulted: type, classification, priority"
+    }
+  ],
+  "id_map": {
+    "jama-item-88001": "jama-item-88001",
+    "jama-item-88002": "DD-STK-7",
+    "jama-item-88003": "DD-STK-8"
+  }
+}
